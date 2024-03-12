@@ -1,0 +1,166 @@
+h1 {
+    color: rgb(219, 105, 12);
+    background-color: black;
+}
+h2{
+    color:rgb(219, 105, 12);
+    background-color: black;
+}
+
+body{
+    background-color: rgb(150, 149, 149);
+}
+
+ul{ 
+ color:rgb(219, 105, 12);
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,900&display=swap');
+
+/*reseteo basico de valores*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.grilla{
+    display: grid;
+    grid-template-columns: 85% 15%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header header"
+                          "main aside"
+                          "footer footer";
+
+}
+.header{
+    grid-area: header;
+    position:sticky;/*pegajoso, pegarse al scroll*/
+    top:0; /*posicion en la que se queda fijado*/
+    background-color:rgba(0, 0, 0, 0.842);
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+
+    .padreLogo{
+       width: 28%;
+       margin-left:30px;
+    }
+    .logo{
+        width:100px;
+    }
+    .navegacion{
+        width:68% ;
+        .listaNav{
+            
+            list-style: none;
+            display: flex;
+            
+            .listaItem{
+              /*  display:inline-block;*/
+                margin-right: 20px;
+                .linkNav{
+                    color:white;
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                
+                }
+            }
+           
+        }
+    }
+}  
+
+
+.mainIndex{
+    grid-area: main;
+  /*  height: 600px;*/
+
+    .seccionTarjetas{
+        padding-left:100px;
+        padding-top:100px;
+        display: block;/*valor por defecto de elementos en bloque*/
+        color:white;
+        line-height: 1.5;
+        background-image: url("../assets/img/header.jpg");
+        background-size: cover;/*ocupa todo el españo disponible*/
+        background-position: center;/*centra la imagen*/
+        background-attachment: fixed;/*la imagen no se mueve al hacer scroll*/
+        width: 100%;/*en el ancho puedo usar siempre % porque los padres tienen por defecto que ocupan siempre el 100% de su contenedor padre*/
+        height:50%;/*en esta propiedad, puedo usar % solo cuando el padre tiene establecido un alto*/
+        height: 100vh;/*1vh es igual a el 1% del alto del navegador*/
+
+        .tituloprincipal{
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            
+        }
+        
+    .SeccionTarjetas{
+        width:90%;
+        margin:0 auto;/*centra el elemento*/
+        text-align: center;
+       
+        .tituloprincipal{
+            text-align: center;
+            font-size: 2rem;
+            padding-top: 20px;
+        }
+        .contenedorTarjetas{
+            display: flex;
+            justify-content: space-evenly;
+            column-gap: 20px;/*espacio entre columnas*/
+            
+            .Tarjeta{
+                 display: inline-block;
+                 width: 300px;
+                 height: 300px;
+                 background-color:rgb(236, 236, 236);
+                 padding:50px 20px;/*tyb lyr*/
+                 padding: 10px 20px 30px 40px;/*top right bottom left*/
+                 padding-top:50px;
+                 padding-bottom: 20px;
+                 padding-left: 15px;
+                 padding-right:20px;
+                 margin-top:20px;
+                 margin-bottom: 20px;
+                 .imgtarjeta{
+                     width: 100%;
+                     height:90%;
+                     object-fit: contain;/*se respeta la dimension de la imagen pero respetando el tamaño del contenedor*/
+                     object-fit: cover;/*se estira para ocupar todo el espacio disponible sin deformarse*/
+                 }
+             }
+        }
+       
+    }
+   
+.footer{
+    grid-area: footer;
+    background-color: rgba(128, 128, 128, 0.477);
+   /* z-index: -100;
+    position:relative;*/
+     .logoFooter{
+        width: 100px;
+        /*  z-index:10;*/
+      }
+      .fa-instagram{
+          color: #8a3ab9;
+          font-size:5rem;
+          position:fixed;/*siempre esta fijo dentro del navegador*/
+          bottom:10px;
+          right: 10px;
+      }
+      }
+    }
+ }
+
+ .tituloprincipal{
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 20px;
+    background-color:rgba(0, 0, 0, 0.842);
+ }
