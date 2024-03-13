@@ -1,106 +1,150 @@
 <!DOCTYPE html>
 <html lang="es">
-                    <head>
-                        <meta charset="UTF-8">
-                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                        <title>Mundo Rally</title>
-                        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"
-                        <script src="https://kit.fontawesome.com/ea077f00e7.js" crossorigin="anonymous"></script>
-                        <link rel="stylesheet" href="./css/estilos.css">
-                    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Rally</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ea077f00e7.js" crossorigin="anonymous"></script>
+ 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ 
+    <link rel="stylesheet" href="./css/estilos.css">
+    <style>
+        .footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 40px 0;
+        }
+        .footer .contactos {
+            margin-bottom: 20px;
+        }
+        .footer .Listanav {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 0;
+            list-style-type: none;
+        }
+        .footer .Listaitem {
+            margin-bottom: 10px;
+        }
+        .card {
+            height: 100%;
+        }
+    </style>
+</head>
 
-                                   <!--Esto seria el menu superior de pagina-->
-                    <body class="contenedor">
-                    <div class="ContendorColumna">                   
-                        <header class="header">
-                        <a class="padreLogo"    href="./index.html">
-                        <img class="logo" src="./assets/Logo.png"     alt="Logo de la pagina">
-                        </a>                                                   
-                        <nav class="navegacion">
-                            <ul class="listaNav">
-                                <li class="listaItem"><a class="LinkNav" href="./index.html">Inicio</a>
-                                </li>
-                                <li class="listaItem"><a class="LinkNav" href="./pages/proximas_fechas.html">Proximas Fechas</a>
-                                </li>
-                                <li class="listaItem"><a class="LinkNav" href="./pages/reglamento.html">Reglamento</a>
-                                </li>
-                                <li class="listaItem"><a class="LinkNav" href="./pages/inscripciones.html">Inscripciones</a>
-                                </li>
-                                <li class="listaItem"><a class="LinkNav" href="./pages/tienda.html">Tienda</a>
-                                </li>
-                                </ul>
-                                </nav>
-                    </header>
+<body class="contenedor">
 
+ 
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="./index.html">
+                    <img class="logo" src="./assets/Logo.png" alt="Logo de la página">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                                   <!--Esto seria la Pagina Principal-->
-
-
-                <main class="mainIndex">
-                <section class="SeccionTarjetas">
-                    <h1 class="tituloprincipal"> Noticias Recientes</h1>
-                 
-                <div class="contenedortarjetas">
-                    <section class="Tarjeta">
-                        <iframe class="Imgtarjeta" width="400" height="350" src="https://www.youtube.com/embed/vN9WjwImgiw?si=siDEv4YPH-q9lnBL&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ad, odio asperiores temporibus tenetur fuga placeat et sapiente rem similique unde officiis perferendis ipsum illo, obcaecati hic excepturi. Ipsum, ullam.</p>
-                    </section>
-
-                    <section class="Tarjeta">
-                        <img class="Imgtarjeta" src="./assets/Imagen2.png" alt="Imagen2"class="Imagen2" height="400" width="400">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ad, odio asperiores temporibus tenetur fuga placeat et sapiente rem similique unde officiis perferendis ipsum illo, obcaecati hic excepturi. Ipsum, ullam.</p>
-                    </section>
-
-                    <section class="Tarjeta">
-                        <img class="Imgtarjeta" src="./assets/Imagen3.png" alt="Imagen3" class="Imagen3" height="400" width="400">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ad, odio asperiores temporibus tenetur fuga placeat et sapiente rem similique unde officiis perferendis ipsum illo, obcaecati hic excepturi. Ipsum, ullam.</p>
-                    </section>
-
-                    <section class="Tarjeta"> 
-                    <iframe class="Imgtarjeta" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54800.75809603145!2d-64.57340134657979!3d-30.857348444813127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d8d8977ba760d%3A0x6a90e69fd00b0cd7!2sCapilla%20del%20Monte%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1707430864103!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere modi nostrum asperiores commodi, quam aspernatur consequatur eligendi facilis, libero esse tenetur quibusdam odio magnam iure saepe deleniti nesciunt laudantium! Quod.</p>
-                    </section>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/proximas_fechas.html">Próximas Fechas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/reglamento.html">Reglamento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/inscripciones.html">Inscripciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/tienda.html">Tienda</a>
+                        </li>
+                    </ul>
                 </div>
-            </section> 
+            </nav>
+        </div>
+    </header>
 
-                </main>
-
-
-                    <footer id="footer" class="footer">
-                        
-                            
-                        <a href="./index.html">
-                            <img class="logofooter" src="./assets/Logo.png"     alt="Logo de la pagina">
-                        </a>
-                    
-                        <nav id="contactosfooter">
-                        <h2>NUESTROS CONTACTOS</h2>
-                        
-                        <a class="iconoinstagram" href="https://www.instagram.com/emi_ardissino/">instagram</a>
-                        <a class="iconowsp" href="https://wa.link/vkwoj2">whastapp</a>
-                        <a class="iconoyoutube" href="https://www.youtube.com/channel/UCGd0_bw2-C8hMwiMxELZ7Dg">youtube</a>
-                        <a class="iconoradio" href="https://radioarg.com/presencia-cordoba/">radio</a>
-                        <a class="iconofacebook" href="https://www.facebook.com/emilianotomas.ardissino">facebook</a>
-                        </nav>
-
-                        <ul class="Listanav">
-                            <li class="Listaitem"><a href="./index.html">Inicio</a>
-                            </li>
-                            <li class="Listaitem"><a href="./pages/proximas_fechas.html">Proximas Fechas</a>
-                            </li>
-                            <li class="Listaitem"><a href="./pages/reglamento.html">Reglamento</a>
-                            </li>
-                            <li class="Listaitem"><a href="./pages/inscripciones.html">Inscripciones</a>
-                            </li>
-                            <li class="Listaitem"><a href="./pages/tienda.html">Tienda</a>
-                            </li>
-                        </ul>
-                    
-                        
-                    </footer>
+  
+    <main class="mainIndex">
+        <div class="container">
+            <section class="SeccionTarjetas">
+                <h1 class="tituloprincipal">Noticias Recientes</h1>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <iframe class="card-img-top" src="https://www.youtube.com/embed/vN9WjwImgiw?si=siDEv4YPH-q9lnBL&amp;controls=0"
+                                title="YouTube video player" allowfullscreen></iframe>
+                            <div class="card-body">
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ad, odio asperiores temporibus tenetur fuga placeat et sapiente rem similique unde officiis perferendis ipsum illo, obcaecati hic excepturi. Ipsum, ullam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <img class="card-img-top" src="./assets/Imagen2.png" alt="Imagen2">
+                            <div class="card-body">
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ad, odio asperiores temporibus tenetur fuga placeat et sapiente rem similique unde officiis perferendis ipsum illo, obcaecati hic excepturi. Ipsum, ullam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <img class="card-img-top" src="./assets/Imagen3.png" alt="Imagen3">
+                            <div class="card-body">
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ad, odio asperiores temporibus tenetur fuga placeat et sapiente rem similique unde officiis perferendis ipsum illo, obcaecati hic excepturi. Ipsum, ullam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <iframe class="card-img-top" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54800.75809603145!2d-64.57340134657979!3d-30.857348444813127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d8d8977ba760d%3A0x6a90e69fd00b0cd7!2sCapilla%20del%20Monte%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1707430864103!5m2!1ses-419!2sar"
+                                style="border:0;" allowfullscreen></iframe>
+                            <div class="card-body">
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere modi nostrum asperiores commodi, quam aspernatur consequatur eligendi facilis, libero esse tenetur quibusdam odio magnam iure saepe deleniti nesciunt laudantium! Quod.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-    </body>
+            </section>
+        </div>
+    </main>
+
+
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="contactos">NUESTROS CONTACTOS</h2>
+                    <a href="https://www.instagram.com/emi_ardissino/"><i class="fa-brands fa-instagram"></i>instagram</a>
+                    <a href="https://wa.link/vkwoj2"><i class="fa-brands fa-square-whatsapp"></i>whatsapp</a>
+                    <a href="https://www.youtube.com/channel/UCGd0_bw2-C8hMwiMxELZ7Dg"><i class="fa-brands fa-youtube"></i>youtube</a>
+                    <a href="https://radioarg.com/presencia-cordoba/"><i class="fa-solid fa-radio"></i>radio</a>
+                    <a href="https://www.facebook.com/emilianotomas.ardissino"><i class="fa-brands fa-square-facebook"></i>facebook</a>
+                </div>
+                <div class="col-md-6">
+                    <h2>Enlaces</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="../Proyecto/pages/proximas_fechas.html">Próximas Fechas</a></li>
+                        <li><a href="../Proyecto/pages/reglamento.html">Reglamento</a></li>
+                        <li><a href="../Proyecto/pages/inscripciones.html">Inscripciones</a></li>
+                        <li><a href="../Proyecto/pages/tienda.html">Tienda</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
-
-
-

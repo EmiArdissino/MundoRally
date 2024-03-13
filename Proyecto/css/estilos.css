@@ -12,7 +12,7 @@ body{
 }
 
 ul{ 
- color:rgb(219, 105, 12);
+ color:rgb(0, 0, 0);
 
 }
 
@@ -36,7 +36,7 @@ ul{
 }
 .header{
     grid-area: header;
-    position:sticky;/*pegajoso, pegarse al scroll*/
+    
     top:0; /*posicion en la que se queda fijado*/
     background-color:rgba(0, 0, 0, 0.842);
     color:white;
